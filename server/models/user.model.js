@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost:27017/poker')
+mongoose.connect('mongodb://localhost:27017/livescore')
 
 const User = new mongoose.Schema(
     {
