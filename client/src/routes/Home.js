@@ -25,7 +25,6 @@ const Home = () => {
     fetch(url, options)
       .then(res => res.json())
       .then(json => {
-        console.log(json)
 
         for (let i=0; i<json.response[0].league.standings[0].length;i++){
           document.getElementById("liveData").innerHTML += 
@@ -49,7 +48,7 @@ const Home = () => {
 
   <div className='h-full w-full bg-stone-400'>
     <div className='flex bg-black text-white justify-center'>
-      Premier League Standing
+      Premier League Standings
     </div>
 
     <div>
