@@ -1,5 +1,5 @@
 const Futuregames = () => {
-    return <h2>Future game content</h2>;
+    return 
 };
 
 export default Futuregames
