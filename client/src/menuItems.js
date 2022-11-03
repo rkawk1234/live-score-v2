@@ -24,8 +24,8 @@ export const menuItems = [
   },
 
   {
-    title: 'About',
-    url: '/about'
+    title: 'Prediction',
+    url: '/prediction'
   },
   {
     title:'Login',
@@ -35,5 +35,6 @@ export const menuItems = [
     title:'Register',
     url: '/register'
   },
+
 
 ];

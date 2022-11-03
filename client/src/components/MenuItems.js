@@ -8,6 +8,7 @@ const MenuItems = ({ items, depthLevel }) => {
 
   let ref = useRef();
 
+
   useEffect(() => {
     const handler = (event) => {
       if (
@@ -55,7 +56,7 @@ const MenuItems = ({ items, depthLevel }) => {
             aria-expanded={dropdown ? 'true' : 'false'}
             onClick={() => setDropdown((prev) => !prev)}
           >
-            {window.innerWidth < 960 && depthLevel === 0 ? (
+            { window.innerWidth < 960 && depthLevel === 0 ? ( 
               items.title
             ) : (
               <Link to={items.url}>{items.title}</Link>

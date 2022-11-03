@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from '../routes/Home';
-import About from '../routes/About';
 import Futuregames from '../routes/Futuregames';
 import Pastgames from '../routes/Pastgames';
 import Games from '../routes/Games';
@@ -8,6 +7,7 @@ import Layout from './Layout';
 import Livescore from '../routes/Livescore';
 import Login from '../routes/Login';
 import Register from '../routes/Register';
+import Prediction from '../routes/Prediction';
 
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
+          <Route path="prediction" element={<Prediction />} />
           <Route path="games" element={<Games />} />
           <Route path="pastgames" element={<Pastgames />} />
           <Route path="futuregames" element={<Futuregames />} />

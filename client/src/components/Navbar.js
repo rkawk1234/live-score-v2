@@ -1,11 +1,14 @@
-import { menuItems } from '../menuItems';
-import MenuItems from './MenuItems';
+import { menuItems } from '../menuItems'
+import MenuItems from './MenuItems'
+
 const Navbar = () => {
+
   return (
     <nav>
+
       <ul className="menus">
         {menuItems.map((menu, index) => {
-          const depthLevel = 0;
+          const depthLevel = 0
           return (
             <MenuItems
               items={menu}
@@ -15,6 +18,10 @@ const Navbar = () => {
           );
         })}
       </ul>
+
+        
+
+
     </nav>
   );
 };
